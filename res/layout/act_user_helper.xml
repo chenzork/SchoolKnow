@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+-file:用户帮助布局文件
+-author:pengwei
+-time:2014/08/11 15:42
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >    
+    
+    <ImageView
+        android:id="@+id/user_help_photo" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/knock_card_defalut_bk"
+        android:contentDescription="@string/app_name"/>
+
+    <ListView
+        android:layout_above="@+id/user_help_photo"
+        android:id="@+id/user_help_menu_lv"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:background="#3B3B3B"
+    	android:padding="10dp">
+    	
+        <ImageView
+            android:id="@+id/film_descoribe_pic"
+            android:layout_width="match_parent"
+    		android:layout_height="120dp"
+    		android:contentDescription="@string/app_name"
+    		android:layout_weight="1"/>
+    	
+        <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_weight="1"
+    		android:layout_marginLeft="5dp">
+    		
+            <TextView
+                 android:layout_width="wrap_content"
+    			 android:layout_height="wrap_content"
+    			 android:text="竹内顺子，杉山纪彰"/>
+            
+             <TextView
+                 android:layout_width="wrap_content"
+    			 android:layout_height="wrap_content"
+    			 android:text="热血，冒险，友情"/>
+             
+              <TextView
+                 android:layout_width="wrap_content"
+    			 android:layout_height="wrap_content"
+    			 android:text="日本"/>
+              
+              <TextView
+                 android:layout_width="wrap_content"
+    			 android:layout_height="wrap_content"
+    			 android:text="2011"/>
+              
+              <TextView
+                 android:layout_width="wrap_content"
+    			 android:layout_height="wrap_content"
+    			 android:text="网盘资源"/>
+    		
+            <TextView
+                android:id="@+id/film_descoribe_playbtn" 
+                 android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="播放"
+    			android:drawableLeft="@drawable/subscribe_icon"
+    			android:drawablePadding="5dp"
+    			android:background="@drawable/player_panel_btton_flash"
+    			android:paddingLeft="10dp"
+    			android:paddingRight="10dp"
+    			android:paddingTop="5dp"
+    			android:paddingBottom="5dp"
+    			android:textColor="@color/white"
+    			android:layout_marginTop="10dp"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    <TextView
+        android:id="@+id/film_descoribe_content"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/weibo_textcolor"
+    	android:padding="5dp"/>
+    
+
+</LinearLayout>
+</ScrollView>

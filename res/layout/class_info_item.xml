@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+    
+    <TextView
+            android:id="@+id/class_info_name" 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="18sp"
+        	android:layout_marginLeft="10dp"
+        	android:textColor="#216184"
+        	android:padding="5dp"/>   
+        	
+     <TextView
+            android:id="@+id/class_info_stuid" 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="12sp"
+        	android:padding="3dp"
+        	android:textColor="@color/weibo_textcolor"
+        	android:layout_marginLeft="10dp"/> 	
+        	
+      <TextView
+            android:id="@+id/class_info_classid" 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="12sp"
+        	android:padding="3dp"
+        	android:textColor="@color/weibo_textcolor"
+        	android:layout_marginLeft="10dp"/> 	
+        	
+       <TextView
+            android:id="@+id/class_info_state" 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="12sp"
+        	android:padding="3dp"
+        	android:textColor="@color/weibo_textcolor"
+        	android:layout_marginLeft="10dp"/> 	
+    
+        
+    
+    
+
+</LinearLayout>
+

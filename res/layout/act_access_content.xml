@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:layout_width="match_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:paddingBottom="20dp">
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6192C8"
+        android:padding="10dp">
+        
+        <TextView
+        android:id="@+id/pj_content_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="60sp"
+        android:layout_centerVertical="true" 
+        android:text="90"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"/>
+        
+        <TextView
+        android:id="@+id/pj_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_toRightOf="@+id/pj_content_score"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp" />
+        
+    </RelativeLayout>
+
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/weibo_textcolor"
+        android:text="请调节进度条选择分数"/>
+        
+         <SeekBar
+        android:id="@+id/pj_sBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="5dip"
+        android:maxHeight="5dip"
+        android:progressDrawable="@drawable/seek_img"
+        android:thumb="@drawable/videoplayer_erect_icon_round"/>
+        
+    </LinearLayout>
+
+   
+    <LinearLayout
+        android:id="@+id/access_content_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/pj_content_editor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none" 
+        android:height="150dp"
+        android:gravity="top"
+        android:hint="@string/pj_teacher"
+        android:background="@drawable/catalog_item_bg"
+        android:padding="10dp"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/pj_content_sure" 
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/sure"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/catalog_item_bg"/>
+        <Button
+            android:id="@+id/pj_content_cancel" 
+               android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/back"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/catalog_item_bg"/>
+    </LinearLayout>
+
+</LinearLayout>
+    
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg">
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/weibo_textcolor"
+        android:text="@string/pj_easy_explain"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="7dp"/>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="@string/pj_easy_start_btn"
+        android:background="@drawable/btn_blue_selector"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="@string/pj_easy_not_start_btn"
+        android:background="@drawable/btn_green_selector"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    
+
+</LinearLayout>
+    
+    
+</ScrollView>

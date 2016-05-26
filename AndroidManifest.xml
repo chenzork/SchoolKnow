@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pw.schoolknow"
+    android:versionCode="17"
+    android:versionName="1.1.7" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 振动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <!-- 获取后台任务 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 开机自启权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 使用定位功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!-- 自定义权限 -->
+    <permission
+        android:name="getui.permission.GetuiService"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.pw.schoolknow.app.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pw.schoolknow.view.UserHelper"
+            android:label="@string/app_name"
+            android:theme="@style/ContentOverlay" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Main"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Index"
+            android:theme="@style/DefaultOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ScheduleDay"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ScheduleManage"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Jwc"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Score"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ScoreData"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.LibraryData"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Library"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.More"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Cet"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.CetData"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.PjContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ImagePagerActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Who"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.WhoContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.SecondClass"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.SecondClassContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ScheduleUpdate"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.User"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ScheduleAdd"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Ask"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.NewAsk"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ImgPreview"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.NewsContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.NewsComment"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Login"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Register"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.CountDown"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FileSharing"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FileSelect"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FileSharingUpload"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.OnlineCourse"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ExamArrange"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ExamArrangeContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FreeClassroom"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FreeClassroomContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.OnlienCourseLogin"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.CountDownUpdate"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ScoreClass"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.UserInfo"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ScheduleWeek"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.UpdateUserName"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Setting"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.About"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Suggest"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ScoreClassContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.AskRanking"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.SchoolFellowSquare"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Schedule"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.MapEcjtu"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.SchoolFellowContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Inform"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.PhotoView"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.BindStuid"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.MultiPicSelect"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.VersionIntro"
+            android:theme="@style/DefaultOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.BukaoInput"
+            android:theme="@style/DefaultOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Bukao"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.MarketSort"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Market"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.MarketPublish"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.Chat"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FriendZone"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FriendsList"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FriendAddVerify"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ChatRecords"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.MarketContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.MyFriendZone"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.SudiList"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.SudiForm"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.UserMain"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.SudiContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.SudiHistory"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FilmList"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.FilmDescribe"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.XuebaList"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.PjLogin"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.PjList"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.PjEasyStart"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.MyBrowser"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ClassInfo"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.ClassContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.pw.schoolknow.view.KaoyanTool"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        
+
+        <!-- service -->
+        <service android:name="com.pw.schoolknow.service.UpdateService" />
+        <service android:name="com.pw.schoolknow.service.Init" />
+        <service android:name="com.pw.schoolknow.service.UpdateFriendsService" />
+        <service android:name="com.pw.schoolknow.service.BootService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- receiver -->
+        <receiver android:name="com.pw.schoolknow.app.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pw.schoolknow.receiver.ScoreSearchReceiver" >
+            <intent-filter>
+                <action android:name="com.pw.schoolknow.receiver.score" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 个推配置 -->
+
+        <meta-data
+            android:name="appid"
+            android:value="fPNID4aVLlA0UfaxkIM1j" />
+        <meta-data
+            android:name="appsecret"
+            android:value="3BvWhlr2W18lRvHEz8HTc1" />
+        <meta-data
+            android:name="appkey"
+            android:value="paMISv5JRs5WcBzWz012j7" />
+
+        <receiver
+            android:name="com.pw.schoolknow.push.PushMessageReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.fPNID4aVLlA0UfaxkIM1j" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.SdkActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.SdkActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+
+                <!-- com.igexin.action.popupact.第三方的包名 -->
+                <action android:name="com.igexin.action.popupact.com.pw.schoolknow" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.igexin.sdk.SdkMainService"
+            android:exported="false"
+            android:label="NotifyCenter"
+            android:process=":pushservice" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.SdkReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.sdk.coordinator.SdkMsgService"
+            android:exported="true"
+            android:label="NotifyCenterAIDL"
+            android:process=":pushservice" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.coordinator.NotificationCenterAIDLReceiver" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
